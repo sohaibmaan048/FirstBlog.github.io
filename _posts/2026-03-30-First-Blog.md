@@ -16,6 +16,8 @@ Pichla saal mushkilat se bhara tha lekin usne mujhe bohat kuch sikhaya. Meri jou
 ### The Struggle and Success
 Last year was full of challenges, especially preparing for **ECAT** with very limited time. At first, I felt completely overwhelmed and unsure if I could manage the exam. I had to focus on the most important topics, prioritize practice over theory, and push myself every day. 
 
+![Desktop View](/assets/img/img.jpg)
+
 Slowly, I began to gain confidence as I solved past papers and reviewed key concepts regularly. Alongside the exam preparation, I also faced academic setbacks in some subjects. It was hard to accept failure at first, but I learned that setbacks are part of the learning process. 
 
 > "By analyzing my mistakes, asking for help when needed, and improving my study methods, I gradually started to recover."
