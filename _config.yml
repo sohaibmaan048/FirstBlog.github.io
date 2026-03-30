@@ -38,9 +38,10 @@ social:
   email: sohaibmaan048@gmail.com # change to your email address
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
-    # The first element serves as the copyright owner's link
-    - https://www.linkedin.com/in/sohaib-maan-067140346 # change to your Twitter homepage
-    - https://github.com/sohaibmaan048 # change to your GitHub homepage
+    - type: linkedin
+      url: https://www.linkedin.com/in/sohaib-maan-067140346
+    - type: github
+      url: https://github.com/sohaibmaan048 # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
