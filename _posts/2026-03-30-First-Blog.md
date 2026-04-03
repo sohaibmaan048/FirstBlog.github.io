@@ -1,6 +1,6 @@
 ---
 title: "Returning to Studies After the Break: The Post-Eid Academic Hustle"
-categories: [Education, University Life]
+focus: [Education, University Life]
 tags: [DBMS, OOP, Student Life, Ramadan, Exams]
 ---
 
