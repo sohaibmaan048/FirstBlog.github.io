@@ -23,6 +23,7 @@ The table included the following attributes (columns):
 * **connectivity VARCHAR(50)** – options like Wi-Fi, Bluetooth, or 5G 🌐
 * **operating_system VARCHAR(50)** – software running the device ⚙️
 * **rating DECIMAL(2,1)** – user rating out of 5 🌟
+![The Structure of the Table](/assets/in_post/pic1.jpg)
 
 Choosing data types for each attribute was an important step. For example, the price needed a decimal type to allow accurate calculations, while battery life required integers for easy comparisons. Using `gadget_id` as a **Primary Key** ensured each record was unique and easy to reference.
 
