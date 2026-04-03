@@ -34,6 +34,9 @@ I then added sample gadgets to test the table, including:
 * **Laptops** 💻 such as MacBook Air and ThinkPad X1
 * **Smartwatches** ⌚ like Galaxy Watch 5
 * **Tablets** 📟 like iPad Pro
+![The Data for the Table](/assets/in_post/pic2.jpg)
+![TABLE](/assets/in_post/pic3.jpg)
+![TABLE Shown in localhost database](/assets/in_post/pic4.jpg)
 
 Even with just 5–6 records, keeping data consistency and accuracy was essential. Attributes like brand, category, battery life, and OS had to match the type of gadget, while the ratings and prices had to feel realistic. This exercise reminded me that even a small dataset requires thoughtful planning.
 
