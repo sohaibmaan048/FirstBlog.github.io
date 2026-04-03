@@ -2,6 +2,9 @@
 title: "Returning to Studies After the Break: The Post-Eid Academic Hustle"
 categories: [Education, University Life]
 tags: [DBMS, OOP, Student Life, Ramadan, Exams]
+image:
+  path: /assets/posts/p1.jpg
+description: "From the peace of Eid to the pressure of midterms—restarting the academic grind with DBMS and OOP."
 ---
 
 ## The Transition from Peace to Productivity 📚
