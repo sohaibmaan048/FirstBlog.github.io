@@ -5,7 +5,6 @@ tags: [DBMS, OOP, Student Life, Ramadan, Exams]
 image:
   path: /assets/posts/p1.jpg
 description: "From the peace of Eid to the pressure of midterms—restarting the academic grind with DBMS and OOP."
-pin: true
 ---
 
 ## The Transition from Peace to Productivity 📚
