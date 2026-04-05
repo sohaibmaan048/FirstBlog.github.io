@@ -52,4 +52,4 @@ I don't just build models in notebooks; I bring them to life.
 
 ---
 
-> "The goal is to turn data into information, and information into insight." – *Carly Fiorina*
+> "The goal is to turn data into information, and information into insight." 
