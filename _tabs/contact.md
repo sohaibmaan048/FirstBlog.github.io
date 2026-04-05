@@ -19,7 +19,7 @@ I’m always happy to connect! You can reach me using the options below:
 
 ## Send a Message
 
-<form action="https://formspree.io/f/yourformid" method="POST">
+<form action="https://formspree.io/f/xjgppjez" method="POST">
   <div class="mb-3">
     <label class="form-label">Your Name</label>
     <input type="text" name="name" class="form-control" placeholder="John Doe" required>
