@@ -13,7 +13,7 @@ I’m always happy to connect! You can reach me using the options below:
   <div class="card-body">
     <p><strong>Email:</strong> <a href="mailto:sohaibmaan048@gmail.com">sohaibmaan048@gmail.com</a></p>
     <p><strong>GitHub:</strong> <a href="https://github.com/sohaibmaan048" target="_blank">sohaibmaan048</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/YOUR_ACTUAL_PROFILE" target="_blank">LinkedIn Profile</a></p>
+    <p><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/sohaib-maan-067140346">LinkedIn Profile</a></p>
   </div>
 </div>
 
