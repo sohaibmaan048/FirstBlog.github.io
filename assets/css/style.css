@@ -63,3 +63,33 @@ img {
   border-radius: 10px !important;
   border: 1px solid #334155 !important;
 }
+
+/* Custom styling for the About Page */
+
+/* Make icons in badges pop */
+.badge i {
+  margin-right: 5px;
+}
+
+/* Specific color for C# (Purple) */
+.bg-purple {
+  background-color: #68217a !important;
+  color: white !important;
+}
+
+/* Styling for the section headers in ML */
+h4 {
+  color: var(--link-color);
+  margin-top: 1.5rem;
+  border-left: 4px solid var(--link-color);
+  padding-left: 10px;
+}
+
+/* Blockquote styling for a professional touch */
+blockquote {
+  border-left: 5px solid var(--link-color) !important;
+  font-style: italic;
+  background: var(--board-bg);
+  padding: 15px;
+  border-radius: 0 10px 10px 0;
+}
