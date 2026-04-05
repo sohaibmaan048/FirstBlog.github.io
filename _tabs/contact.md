@@ -22,7 +22,7 @@ I’m always happy to connect! You can reach me using the options below:
 <form action="https://formspree.io/f/xjgppjez" method="POST">
   <div class="mb-3">
     <label class="form-label">Your Name</label>
-    <input type="text" name="name" class="form-control" placeholder="John Doe" required>
+    <input type="text" name="name" class="form-control" placeholder="SOHAIB MAAN" required>
   </div>
 
   <div class="mb-3">
