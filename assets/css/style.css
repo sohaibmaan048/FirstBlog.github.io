@@ -1,66 +1,65 @@
-/* --- Custom Contact Form Styling for Chirpy --- */
+/* --- Global Portfolio Enhancements --- */
 
-/* 1. Style the Contact Card */
-.card {
-  background-color: var(--main-bg);
-  border: 1px solid var(--btn-border-color);
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+:root {
+  /* 1. Pick a Unique Brand Color (Replace #6e8efb with your favorite color) */
+  --link-color: #6e8efb; 
+  --link-underline-color: rgba(110, 142, 251, 0.3);
+  --main-bg: #0f172a; /* Deep Navy for Dark Mode */
+  --board-bg: #1e293b;
 }
 
-.card:hover {
-  transform: translateY(-3px);
-  border-color: var(--link-color);
+/* 2. Smooth Scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
 }
 
-/* 2. Style Form Labels */
-.form-label {
-  font-weight: 600;
-  color: var(--heading-color);
-  margin-bottom: 8px;
-  display: block;
+/* 3. Subtle Hover Effect on Sidebar Links */
+#sidebar .nav-item:hover {
+  background: rgba(var(--link-color-rgb), 0.1);
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
-/* 3. Style Input Fields and Textarea */
+/* 4. Make Post Cards look like "Floating Tiles" */
+.post-preview {
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 15px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  background: var(--board-bg) !important;
+}
+
+.post-preview:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+  border-color: var(--link-color) !important;
+}
+
+/* 5. Custom Scrollbar (Very sleek) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--main-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--link-color);
+}
+
+/* 6. Fix for Image Shadows */
+img {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 7. The Contact Form (from our previous step) */
 .form-control {
-  background-color: var(--main-bg) !important; /* Forces theme background */
-  color: var(--text-color) !important;
-  border: 1px solid var(--btn-border-color);
-  border-radius: 8px;
-  padding: 12px;
-  width: 100%;
-  transition: all 0.2s ease-in-out;
-}
-
-/* 4. Focus State (When clicking into a box) */
-.form-control:focus {
-  outline: none;
-  border-color: var(--link-color);
-  box-shadow: 0 0 0 3px rgba(var(--link-color-rgb), 0.2);
-}
-
-/* 5. Style the Send Button */
-.btn-primary {
-  background-color: var(--link-color);
-  border: none;
-  color: #fff !important;
-  padding: 12px 25px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: filter 0.2s ease;
-  margin-top: 10px;
-}
-
-.btn-primary:hover {
-  filter: brightness(1.1); /* Makes the button slightly brighter on hover */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* 6. Spacing for form groups */
-.mb-3 {
-  margin-bottom: 1.5rem;
+  border-radius: 10px !important;
+  border: 1px solid #334155 !important;
 }
