@@ -25,13 +25,7 @@ description: >- # used by seo meta and the atom feed
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://sohaibmaan048.github.io"
 
-navbar:
-  - title: Home
-    url: /
-  - title: About
-    url: /about/
-  - title: Contact
-    url: /contact/
+
     
 github:
   username: sohaibmaan048 # change to your GitHub username
