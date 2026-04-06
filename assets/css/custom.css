@@ -1,0 +1,65 @@
+/* --- Global Post Styling for Sohaib's Blog --- */
+
+/* 1. Header Styling (The "Underline" effect) */
+.post h2 {
+  color: #4f46e5 !important;
+  border-bottom: 2px solid rgba(79, 70, 229, 0.1) !important;
+  padding-bottom: 8px;
+  margin-top: 2rem !important;
+  font-weight: 800 !important;
+}
+
+.post h3 {
+  color: #06b6d4 !important; /* Electric Cyan */
+  font-family: 'JetBrains Mono', monospace !important;
+  margin-top: 1.5rem !important;
+}
+
+/* 2. Interactive List Bullets (The Coding Brackets) */
+.post ul li {
+  list-style: none !important;
+  position: relative;
+  padding-left: 5px;
+  transition: all 0.3s ease !important;
+}
+
+.post ul li::before {
+  content: "〉" !important;
+  color: #4f46e5 !important;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.post ul li:hover {
+  transform: translateX(8px) !important;
+  color: #4f46e5 !important;
+}
+
+/* 3. Bold Keyword Highlights */
+.post strong {
+  color: #4f46e5 !important;
+  background: rgba(79, 70, 229, 0.05) !important;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+/* 4. Post Image "Lift" Effect */
+.post img {
+  border-radius: 16px !important;
+  transition: transform 0.4s ease, box-shadow 0.4s ease !important;
+  border: 1px solid rgba(79, 70, 229, 0.1) !important;
+}
+
+.post img:hover {
+  transform: scale(1.02) translateY(-5px) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+  border-color: #4f46e5 !important;
+}
+
+/* 5. Horizontal Divider Gradient */
+.post hr {
+  background: linear-gradient(to right, transparent, #4f46e5, transparent) !important;
+  height: 1px !important;
+  border: none !important;
+  margin: 3rem 0 !important;
+}
