@@ -1,26 +1,33 @@
+---
+# This front matter is required for Jekyll to process the file
+---
+
+@import "jekyll-theme-chirpy";
+
 /* --- Global Portfolio Enhancements --- */
 
 :root {
-  /* 1. Pick a Unique Brand Color (Replace #6e8efb with your favorite color) */
+  /* 1. Brand Colors */
   --link-color: #6e8efb; 
+  --link-color-rgb: 110, 142, 251; /* Added to support RGBA hover effects */
   --link-underline-color: rgba(110, 142, 251, 0.3);
   --main-bg: #0f172a; /* Deep Navy for Dark Mode */
   --board-bg: #1e293b;
 }
 
-/* 2. Smooth Scrolling for the whole page */
+/* 2. Smooth Scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* 3. Subtle Hover Effect on Sidebar Links */
+/* 3. Sidebar Hover Effect */
 #sidebar .nav-item:hover {
-  background: rgba(var(--link-color-rgb), 0.1);
+  background: rgba(110, 142, 251, 0.1); /* Direct use of brand color with transparency */
   border-radius: 8px;
   transition: 0.3s;
 }
 
-/* 4. Make Post Cards look like "Floating Tiles" */
+/* 4. Floating Tile Post Cards */
 .post-preview {
   border: 1px solid rgba(255, 255, 255, 0.05) !important;
   border-radius: 15px !important;
@@ -34,7 +41,7 @@ html {
   border-color: var(--link-color) !important;
 }
 
-/* 5. Custom Scrollbar (Very sleek) */
+/* 5. Sleek Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -52,32 +59,34 @@ html {
   background: var(--link-color);
 }
 
-/* 6. Fix for Image Shadows */
+/* 6. Image Styling */
 img {
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* 7. The Contact Form (from our previous step) */
+/* 7. Form Improvements */
 .form-control {
   border-radius: 10px !important;
   border: 1px solid #334155 !important;
+  background-color: var(--main-bg) !important;
+  color: white !important;
 }
 
-/* Custom styling for the About Page */
+/* --- About Page & Skill Enhancements --- */
 
-/* Make icons in badges pop */
+/* Badge Icon Spacing */
 .badge i {
   margin-right: 5px;
 }
 
-/* Specific color for C# (Purple) */
+/* C# Purple Brand Color */
 .bg-purple {
   background-color: #68217a !important;
   color: white !important;
 }
 
-/* Styling for the section headers in ML */
+/* Section Headers with Accent Line */
 h4 {
   color: var(--link-color);
   margin-top: 1.5rem;
@@ -85,11 +94,12 @@ h4 {
   padding-left: 10px;
 }
 
-/* Blockquote styling for a professional touch */
+/* Professional Blockquotes */
 blockquote {
   border-left: 5px solid var(--link-color) !important;
   font-style: italic;
   background: var(--board-bg);
   padding: 15px;
   border-radius: 0 10px 10px 0;
+  margin: 1.5rem 0;
 }
