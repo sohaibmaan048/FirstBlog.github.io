@@ -68,103 +68,100 @@ I’m always happy to connect! Feel free to reach out through any of the platfor
 
 
 <style>
-  /* Container Styling */
-  #get-in-touch + p {
-    margin-bottom: 30px;
-    color: #94a3b8;
+  /* --- Modern Tech / Slate & Cyan Palette --- */
+  
+  /* Reset and Typography */
+  .contact-container {
+    margin-top: 2rem;
   }
 
-  /* Remove default link styling */
+  /* The Link Wrapper */
   .contact-card {
     text-decoration: none !important;
     display: block;
-    transition: all 0.3s ease;
+    margin-bottom: 1rem;
   }
 
-  /* The Tiles/Cards - Professional Dark Theme */
+  /* The Card Design */
   .contact-card .card {
-    background: rgba(30, 41, 59, 0.5) !important; /* Semi-transparent slate */
-    backdrop-filter: blur(10px); /* Blur effect */
-    border: 1px solid rgba(255, 255, 255, 0.05) !important;
-    border-radius: 16px !important;
-    padding: 25px 15px !important;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    background: #0f172a !important; /* Deep Space Navy */
+    border: 1px solid #1e293b !important; /* Subtle Slate Border */
+    border-radius: 12px !important;
+    padding: 20px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative;
+    overflow: hidden;
   }
 
-  /* Hover State - Indigo Glow */
+  /* The "Cyber" Glow on Hover */
   .contact-card:hover .card {
-    transform: translateY(-8px);
-    background: rgba(110, 142, 251, 0.1) !important;
-    border-color: #6e8efb !important;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(110, 142, 251, 0.2);
+    transform: translateY(-5px);
+    border-color: #22d3ee !important; /* Bright Cyan */
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.15);
+    background: #111827 !important;
   }
 
-  /* Icon Colors */
+  /* Icon and Text Colors */
   .contact-card i {
-    color: #94a3b8; /* Muted silver/gray by default */
-    transition: color 0.3s ease;
+    color: #22d3ee; /* Cyan Icons */
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 5px rgba(34, 211, 238, 0.3));
   }
 
-  .contact-card:hover i {
-    color: #6e8efb; /* Turns Brand Blue on hover */
-  }
-
-  /* Text inside cards */
   .contact-card span {
-    color: #f1f5f9 !important; /* Off-white */
-    font-weight: 700;
-    font-size: 1.1rem;
-    margin-top: 10px;
+    color: #f8fafc !important; /* High Contrast White */
+    font-weight: 600;
+    font-size: 1.05rem;
     display: block;
   }
 
   .contact-card small {
-    color: #64748b !important; /* Muted blue-gray */
-    font-size: 0.85rem;
+    color: #64748b !important; /* Muted Slate */
+    font-family: 'JetBrains Mono', monospace; /* Tech feel */
+    font-size: 0.8rem;
   }
 
-  /* Form Input Styling - Deep Navy */
-  .modern-form .form-label {
-    color: #94a3b8;
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-left: 5px;
-  }
-
+  /* Form Styling - Integrated Look */
   .modern-form .form-control {
-    background: #0f172a !important; /* Darker than the cards */
+    background: #020617 !important; /* Almost Black */
     border: 1px solid #1e293b !important;
-    color: #e2e8f0 !important;
-    border-radius: 12px !important;
-    padding: 14px !important;
-    transition: 0.3s;
+    color: #f1f5f9 !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
   }
 
   .modern-form .form-control:focus {
-    border-color: #6e8efb !important;
-    background: #1e293b !important;
-    box-shadow: 0 0 0 4px rgba(110, 142, 251, 0.1) !important;
+    border-color: #22d3ee !important;
+    box-shadow: 0 0 0 2px rgba(34, 211, 238, 0.1) !important;
   }
 
-  /* Submit Button - Soft Gradient */
+  /* Submit Button - Solid Professional Look */
   .btn-submit {
-    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%) !important;
-    color: white !important;
+    background: #22d3ee !important; /* Solid Cyan */
+    color: #020617 !important; /* Dark text for readability */
     border: none !important;
-    padding: 16px !important;
-    border-radius: 12px !important;
-    font-weight: 700 !important;
-    letter-spacing: 0.5px;
+    padding: 14px !important;
+    border-radius: 8px !important;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
+    transition: 0.2s ease;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
-    transition: 0.3s;
   }
 
   .btn-submit:hover {
-    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5);
+    background: #06b6d4 !important; /* Slightly darker cyan */
+    box-shadow: 0 0 25px rgba(34, 211, 238, 0.4);
     transform: scale(1.01);
-    filter: brightness(1.1);
+  }
+
+  /* Label Colors */
+  .form-label {
+    color: #94a3b8 !important;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
 </style>
