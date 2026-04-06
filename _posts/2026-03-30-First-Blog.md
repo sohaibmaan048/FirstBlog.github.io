@@ -50,3 +50,78 @@ With midterms approaching, my strategy now is all about **Time Management**. I a
 Despite the pressure and the occasional feeling of being overwhelmed, I am determined to stay focused. The journey from a relaxed Eid break back to the intense academic environment is a test of discipline. I am learning that growth happens exactly in these moments—when you are pushed out of your comfort zone and forced to manage multiple challenges at once.
 
 Stay tuned as I navigate through the midterm season. Hopefully, the next update will be about successfully clearing these hurdles! 🚀
+
+
+
+
+
+
+
+<style>
+  /* --- Home Page & Post Card Enhancements --- */
+
+  /* 1. The Card Container - Smooth base state */
+  article.card, 
+  .post-preview,
+  #post-list .card {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+    border: 1px solid rgba(79, 70, 229, 0.1) !important;
+    background: rgba(120, 120, 120, 0.02) !important;
+    border-radius: 16px !important;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* 2. Hover Effect: The "Premium Lift" */
+  article.card:hover, 
+  .post-preview:hover,
+  #post-list .card:hover {
+    transform: translateY(-8px) scale(1.01) !important;
+    border-color: #4f46e5 !important; /* Indigo match */
+    background: rgba(79, 70, 229, 0.03) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2), 
+                0 0 15px rgba(79, 70, 229, 0.1) !important;
+  }
+
+  /* 3. Image Zoom - Makes the thumbnails feel alive */
+  .post-preview img, 
+  .card img,
+  .preview-img img {
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  }
+
+  article.card:hover img, 
+  .post-preview:hover img {
+    transform: scale(1.08) !important;
+  }
+
+  /* 4. Title Glow on Hover */
+  article.card:hover h1,
+  .post-preview:hover .post-title {
+    color: #06b6d4 !important; /* Electric Cyan match */
+    transition: color 0.3s ease;
+  }
+
+  /* 5. Trending Tags - Make them pop */
+  .post-tag {
+    transition: all 0.3s ease !important;
+    border: 1px solid rgba(79, 70, 229, 0.2) !important;
+  }
+
+  .post-tag:hover {
+    background: #4f46e5 !important;
+    color: white !important;
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 5px 10px rgba(79, 70, 229, 0.3);
+  }
+
+  /* 6. Sidebar Card Glow (Recently Updated / Trending) */
+  #sidebar .card {
+     border: 1px solid rgba(120, 120, 120, 0.1) !important;
+     transition: border-color 0.3s ease;
+  }
+  
+  #sidebar .card:hover {
+     border-color: rgba(79, 70, 229, 0.4) !important;
+  }
+</style>
