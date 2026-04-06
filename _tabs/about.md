@@ -88,13 +88,13 @@ order: 1
 
 
 <style>
-  /* --- Monokai Pro / Octagon Developer Vibe --- */
+  /* --- Universal Indigo / Light & Dark Compatible --- */
 
-  /* 1. Header with Octagon Gradient */
+  /* 1. Header with Strong Gradient */
   .display-title {
     font-size: 3rem;
     font-weight: 900;
-    background: linear-gradient(to right, #ffd866, #ff6188); /* Mellow Amber to Salmon */
+    background: linear-gradient(to right, #4f46e5, #06b6d4); /* Indigo to Cyan */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.2rem;
@@ -102,126 +102,103 @@ order: 1
   }
 
   .hero-subtitle {
-    color: #ffd866; /* Octagon Yellow */
-    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    color: #4f46e5; /* Solid Indigo - Visible on both white and black */
+    font-family: 'JetBrains Mono', monospace;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     margin-bottom: 20px;
-    opacity: 0.9;
   }
 
-  /* 2. Glassmorphism Mission Box - Octagon Tint */
+  /* 2. Adaptive Blockquote */
   blockquote {
-    border-left: 5px solid #ffd866 !important;
-    background: rgba(255, 216, 102, 0.05) !important;
-    border-radius: 12px !important;
-    padding: 25px !important;
-    color: #e3e3e3 !important;
-    box-shadow: inset 0 0 20px rgba(255, 216, 102, 0.02);
+    border-left: 5px solid #4f46e5 !important;
+    background: rgba(79, 70, 229, 0.05) !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+    color: inherit !important; /* Follows theme text color */
   }
 
-  /* 3. Skill Tiles - Octagon Palette */
+  /* 3. Skill Tiles - Adaptive Backgrounds */
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    margin-top: 25px;
   }
 
   .skill-item {
-    background: #282a36 !important; /* Dark Slate */
-    border: 1px solid #3d3f4b !important;
+    background: var(--card-bg, #ffffff) !important; /* Uses Chirpy's variable if available */
+    border: 1px solid rgba(79, 70, 229, 0.2) !important;
     padding: 20px;
-    border-radius: 16px;
+    border-radius: 12px;
     text-align: center;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
 
-  /* Hover Glows - Octagon Professional Colors */
-  .python:hover { border-color: #a9dc76 !important; box-shadow: 0 0 20px rgba(169, 220, 118, 0.2); }
-  .csharp:hover { border-color: #ab9df2 !important; box-shadow: 0 0 20px rgba(171, 157, 242, 0.2); }
-  .sql:hover { border-color: #ffd866 !important; box-shadow: 0 0 20px rgba(255, 216, 102, 0.2); }
-  .web:hover { border-color: #fc9867 !important; box-shadow: 0 0 20px rgba(252, 152, 103, 0.2); }
+  .skill-item:hover {
+    border-color: #4f46e5 !important;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.2);
+  }
 
   .skill-item i {
     font-size: 2rem;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     display: block;
-    color: #ffd866; 
+    color: #4f46e5; 
   }
   
-  .skill-item span { color: #fdfdfd; font-weight: bold; display: block; }
-  .skill-item small { color: #727072; font-size: 0.8rem; }
+  .skill-item span { font-weight: bold; display: block; color: inherit; }
 
-  /* --- FIXED TIMELINE ALIGNMENT - Octagon Edition --- */
+  /* --- Adaptive Timeline --- */
   .timeline {
     position: relative;
-    max-width: 100%;
-    margin: 40px 0;
     padding-left: 30px;
-    border-left: 2px solid #3d3f4b; 
+    border-left: 2px solid rgba(79, 70, 229, 0.2);
+    margin: 40px 0;
   }
 
-  .timeline-item {
-    position: relative;
-    margin-bottom: 30px;
-  }
-
-  /* The Glowing Dots - Amber */
   .timeline-dot {
     position: absolute;
-    left: -38px; 
-    top: 20px;
-    width: 14px;
-    height: 14px;
-    background: #ffd866;
+    left: -37px; 
+    top: 22px;
+    width: 12px;
+    height: 12px;
+    background: #4f46e5;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(255, 216, 102, 0.6);
     z-index: 10;
-    border: 2px solid #282a36;
+    border: 2px solid white; /* Keeps it clean in light mode */
   }
 
-  /* The Content Boxes */
   .timeline-content {
-    background: rgba(40, 42, 54, 0.6) !important;
-    border: 1px solid rgba(255, 216, 102, 0.05) !important;
-    padding: 20px;
-    border-radius: 16px;
+    background: rgba(79, 70, 229, 0.03) !important;
+    border: 1px solid rgba(79, 70, 229, 0.1) !important;
+    padding: 18px;
+    border-radius: 12px;
     margin-left: 10px;
-    transition: all 0.3s ease;
   }
 
-  .timeline-content:hover {
-    background: rgba(255, 216, 102, 0.02) !important;
-    border-color: #ffd866 !important;
-    transform: translateX(8px);
-  }
-
-  /* --- "PRESENT" HIGHLIGHT - Salmon Pink --- */
+  /* --- Active State (Works in Light & Dark) --- */
   .timeline-item:nth-last-child(-n+2) .timeline-dot {
-    background: #ff6188 !important; /* Salmon for active focus */
-    box-shadow: 0 0 15px rgba(255, 97, 136, 0.5);
+    background: #06b6d4 !important; /* Bright Cyan for focus */
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
   }
 
   .timeline-item:nth-last-child(-n+2) .timeline-content {
-    border-left: 3px solid #ff6188 !important;
+    border-left: 4px solid #06b6d4 !important;
+    background: rgba(6, 182, 212, 0.03) !important;
   }
 
-  .milestone-title { color: #fdfdfd !important; font-size: 1.2rem !important; font-weight: 700; }
-  
   .milestone-date {
-    color: #ffd866 !important;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.85rem;
+    color: #4f46e5 !important;
     font-weight: bold;
-    margin-bottom: 10px;
-    display: inline-block;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
   }
 
   .timeline-item:nth-last-child(-n+2) .milestone-date {
-    color: #ff6188 !important;
+    color: #0891b2 !important;
   }
-
-  .timeline-content p { color: #939293 !important; line-height: 1.6; margin: 0; }
 </style>
