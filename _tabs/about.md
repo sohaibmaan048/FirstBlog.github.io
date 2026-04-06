@@ -209,4 +209,15 @@ order: 1
   .timeline-item:nth-last-child(-n+2) .milestone-date { color: #0891b2 !important; }
   
   .timeline-content p { color: inherit; opacity: 0.8; font-size: 0.95rem; line-height: 1.6; margin: 0; }
+
+  /* Hide the default Chirpy page title to remove redundancy */
+.post-content > h1:first-of-type, 
+header .post-title {
+  display: none !important;
+}
+
+/* Optional: Adjust spacing at the very top now that the title is gone */
+.about-header {
+  margin-top: -20px;
+}
 </style>
