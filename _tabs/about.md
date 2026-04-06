@@ -78,19 +78,31 @@ order: 1
   </div>
 </div>
 
+
+
+
+
+
+
+
+
+
 <style>
-  /* --- Global Theme & Header --- */
+  /* --- Cyber-Copper / Industrial Premium Overhaul --- */
+
+  /* 1. Header with Copper Gradient */
   .display-title {
     font-size: 3rem;
     font-weight: 900;
-    background: linear-gradient(to right, #00d2ff, #92fe9d);
+    background: linear-gradient(to right, #f59e0b, #fb7185); /* Amber to Rose Copper */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.2rem;
+    letter-spacing: -1px;
   }
 
   .hero-subtitle {
-    color: #22d3ee;
+    color: #f59e0b; /* Primary Copper Amber */
     font-family: 'Courier New', monospace;
     font-weight: bold;
     text-transform: uppercase;
@@ -98,42 +110,56 @@ order: 1
     margin-bottom: 20px;
   }
 
+  /* 2. Glassmorphism Mission Box - Warm Tint */
   blockquote {
-    border-left: 5px solid #00d2ff !important;
-    background: rgba(0, 210, 255, 0.05) !important;
+    border-left: 5px solid #f59e0b !important;
+    background: rgba(245, 158, 11, 0.05) !important;
     border-radius: 12px !important;
-    padding: 20px !important;
+    padding: 25px !important;
     color: #e2e8f0 !important;
+    box-shadow: inset 0 0 20px rgba(245, 158, 11, 0.03);
   }
 
-  /* --- Skill Tiles --- */
+  /* 3. Skill Tiles with Copper Borders */
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
   }
 
   .skill-item {
-    background: #111827 !important;
+    background: #0f1115 !important; /* Charcoal Black */
     border: 1px solid #1e293b !important;
     padding: 20px;
     border-radius: 16px;
     text-align: center;
-    transition: 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
-  .skill-item:hover { transform: translateY(-5px); border-color: #22d3ee !important; }
-  .skill-item i { font-size: 2rem; margin-bottom: 10px; display: block; color: #22d3ee; }
+  /* Individual Hover Glows - Warm Palette */
+  .python:hover { border-color: #3776ab !important; box-shadow: 0 0 20px rgba(55, 118, 171, 0.2); }
+  .csharp:hover { border-color: #fb7185 !important; box-shadow: 0 0 20px rgba(251, 113, 133, 0.2); }
+  .sql:hover { border-color: #f59e0b !important; box-shadow: 0 0 20px rgba(245, 158, 11, 0.2); }
+  .web:hover { border-color: #f43f5e !important; box-shadow: 0 0 20px rgba(244, 63, 94, 0.2); }
+
+  .skill-item i {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    display: block;
+    color: #f59e0b; /* Icons now Copper */
+  }
+  
   .skill-item span { color: #f8fafc; font-weight: bold; display: block; }
   .skill-item small { color: #64748b; font-size: 0.8rem; }
 
-  /* --- Timeline Logic --- */
+  /* --- FIXED TIMELINE ALIGNMENT - Copper Edition --- */
   .timeline {
     position: relative;
-    padding-left: 30px;
-    border-left: 2px solid #1e293b;
+    max-width: 100%;
     margin: 40px 0;
+    padding-left: 30px;
+    border-left: 2px solid #1e293b; 
   }
 
   .timeline-item {
@@ -141,40 +167,60 @@ order: 1
     margin-bottom: 30px;
   }
 
+  /* The Glowing Dots - Warm Amber */
   .timeline-dot {
     position: absolute;
-    left: -38px;
-    top: 22px;
+    left: -38px; 
+    top: 20px;
     width: 14px;
     height: 14px;
-    background: #22d3ee;
+    background: #f59e0b;
     border-radius: 50%;
-    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.8);
     z-index: 10;
+    border: 2px solid #0f1115;
   }
 
+  /* The Content Boxes */
   .timeline-content {
-    background: rgba(30, 41, 59, 0.4) !important;
+    background: rgba(30, 41, 59, 0.3) !important;
     border: 1px solid rgba(255, 255, 255, 0.05) !important;
-    padding: 18px;
-    border-radius: 14px;
+    padding: 20px;
+    border-radius: 16px;
     margin-left: 10px;
+    transition: all 0.3s ease;
   }
 
-  /* --- Active State Highlights (Amber) --- */
-  /* Targets the last two items (C# and MySQL) */
+  .timeline-content:hover {
+    background: rgba(245, 158, 11, 0.03) !important;
+    border-color: #f59e0b !important;
+    transform: translateX(8px);
+  }
+
+  /* --- "PRESENT" HIGHLIGHT - Rose Copper --- */
   .timeline-item:nth-last-child(-n+2) .timeline-dot {
-    background: #fbbf24 !important;
-    box-shadow: 0 0 15px rgba(251, 191, 36, 0.5);
+    background: #fb7185 !important; /* Rose Copper for active */
+    box-shadow: 0 0 15px rgba(251, 113, 133, 0.6);
   }
 
   .timeline-item:nth-last-child(-n+2) .timeline-content {
-    border-left: 3px solid #fbbf24 !important;
+    border-left: 3px solid #fb7185 !important;
   }
 
-  .milestone-title { color: #f1f5f9 !important; font-size: 1.15rem !important; margin-bottom: 4px !important; }
-  .milestone-date { color: #22d3ee !important; font-size: 0.8rem; font-weight: bold; margin-bottom: 8px; display: inline-block; }
-  .timeline-item:nth-last-child(-n+2) .milestone-date { color: #fbbf24 !important; }
+  .milestone-title { color: #f1f5f9 !important; font-size: 1.2rem !important; font-weight: 700; }
   
-  .timeline-content p { color: #94a3b8 !important; font-size: 0.9rem; line-height: 1.5; margin: 0; }
+  .milestone-date {
+    color: #f59e0b !important;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  .timeline-item:nth-last-child(-n+2) .milestone-date {
+    color: #fb7185 !important;
+  }
+
+  .timeline-content p { color: #94a3b8 !important; line-height: 1.6; margin: 0; }
 </style>
