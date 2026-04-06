@@ -58,70 +58,72 @@ Stay tuned as I navigate through the midterm season. Hopefully, the next update 
 
 
 <style>
-  /* --- Home Page & Post Card Enhancements --- */
+  /* --- Internal Post Styling: The Dev-Article Look --- */
 
-  /* 1. The Card Container - Smooth base state */
-  article.card, 
-  .post-preview,
-  #post-list .card {
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
-    border: 1px solid rgba(79, 70, 229, 0.1) !important;
-    background: rgba(120, 120, 120, 0.02) !important;
-    border-radius: 16px !important;
-    overflow: hidden;
+  /* 1. Styled Headers (Indigo Gradient) */
+  .post-content h2 {
+    color: #4f46e5;
+    border-bottom: 2px solid rgba(79, 70, 229, 0.1);
+    padding-bottom: 10px;
+    margin-top: 40px !important;
+    font-weight: 800;
+  }
+
+  .post-content h3 {
+    color: #06b6d4; /* Electric Cyan */
+    font-family: 'JetBrains Mono', monospace;
+    display: flex;
+    align-items: center;
+  }
+
+  /* 2. Interactive Lists (The DBMS/OOP sections) */
+  .post-content ul li {
+    list-style: none;
     position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
   }
 
-  /* 2. Hover Effect: The "Premium Lift" */
-  article.card:hover, 
-  .post-preview:hover,
-  #post-list .card:hover {
-    transform: translateY(-8px) scale(1.01) !important;
-    border-color: #4f46e5 !important; /* Indigo match */
-    background: rgba(79, 70, 229, 0.03) !important;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2), 
-                0 0 15px rgba(79, 70, 229, 0.1) !important;
+  .post-content ul li::before {
+    content: "〉"; /* Coding bracket as bullet */
+    position: absolute;
+    left: 0;
+    color: #4f46e5;
+    font-weight: bold;
   }
 
-  /* 3. Image Zoom - Makes the thumbnails feel alive */
-  .post-preview img, 
-  .card img,
-  .preview-img img {
-    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  .post-content ul li:hover {
+    transform: translateX(5px);
+    color: #4f46e5;
   }
 
-  article.card:hover img, 
-  .post-preview:hover img {
-    transform: scale(1.08) !important;
+  /* 3. The "Key Challenges" Box (Glassmorphism) */
+  .post-content strong {
+    color: #4f46e5;
+    background: rgba(79, 70, 229, 0.05);
+    padding: 2px 6px;
+    border-radius: 4px;
   }
 
-  /* 4. Title Glow on Hover */
-  article.card:hover h1,
-  .post-preview:hover .post-title {
-    color: #06b6d4 !important; /* Electric Cyan match */
-    transition: color 0.3s ease;
+  /* 4. Highlighted Horizontal Rule */
+  hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #4f46e5, transparent);
+    margin: 40px 0;
   }
 
-  /* 5. Trending Tags - Make them pop */
-  .post-tag {
-    transition: all 0.3s ease !important;
-    border: 1px solid rgba(79, 70, 229, 0.2) !important;
+  /* 5. Image Pop Effect */
+  .post-content img {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(120, 120, 120, 0.1);
   }
 
-  .post-tag:hover {
-    background: #4f46e5 !important;
-    color: white !important;
-    transform: scale(1.1) rotate(-2deg);
-    box-shadow: 0 5px 10px rgba(79, 70, 229, 0.3);
-  }
-
-  /* 6. Sidebar Card Glow (Recently Updated / Trending) */
-  #sidebar .card {
-     border: 1px solid rgba(120, 120, 120, 0.1) !important;
-     transition: border-color 0.3s ease;
-  }
-  
-  #sidebar .card:hover {
-     border-color: rgba(79, 70, 229, 0.4) !important;
+  .post-content img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border-color: #4f46e5;
   }
 </style>
