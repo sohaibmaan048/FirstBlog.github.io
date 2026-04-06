@@ -34,7 +34,7 @@ I am currently a student at **UET Faisalabad**, bridging the gap between complex
     <div class="timeline-dot"></div>
     <div class="timeline-content">
       <h3 class="milestone-title">UET Faisalabad 🎓</h3>
-      <p class="milestone-date">2022 - Present</p>
+      <p class="milestone-date">2025 - Present</p>
       <p>Currently pursuing my degree, focusing on the intersection of Software Engineering and Data Science. Maintaining a strong foundation in core algorithms.</p>
     </div>
   </div>
@@ -43,7 +43,7 @@ I am currently a student at **UET Faisalabad**, bridging the gap between complex
     <div class="timeline-dot"></div>
     <div class="timeline-content">
       <h3 class="milestone-title">Machine Learning Deep Dive 🤖</h3>
-      <p class="milestone-date">2023 - 2024</p>
+      <p class="milestone-date">SEP-2025 - FEB-2026</p>
       <p>Shifted focus toward <strong>Predictive Modeling</strong>. Mastered Scikit-Learn and Pandas to clean raw data and turn it into actionable insights.</p>
     </div>
   </div>
@@ -51,12 +51,21 @@ I am currently a student at **UET Faisalabad**, bridging the gap between complex
   <div class="timeline-item">
     <div class="timeline-dot"></div>
     <div class="timeline-content">
-      <h3 class="milestone-title">Full-Stack Integration 🌐</h3>
-      <p class="milestone-date">Present</p>
+      <h3 class="milestone-title">C#(.NET Framework) 🌐</h3>
+      <p class="milestone-date">FEB-2026 - Present</p>
       <p>Bridging the gap by integrating ML models into functional web and desktop environments using <strong>.NET and C#</strong>.</p>
     </div>
   </div>
 </div>
+
+<div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h3 class="milestone-title">MySQL & Data Engineering 🗄️</h3>
+      <p class="milestone-date">FEB 2026 - PRESENT</p>
+      <p>Focused on <strong>Database Architecture</strong> and query optimization. Managing relational data structures to ensure seamless data flow between <strong>MySQL</strong> backends and intelligent ML pipelines.</p>
+    </div>
+  </div>
 ---
 
 
