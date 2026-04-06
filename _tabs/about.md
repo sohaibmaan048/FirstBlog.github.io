@@ -88,13 +88,13 @@ order: 1
 
 
 <style>
-  /* --- Cyber-Copper / Industrial Premium Overhaul --- */
+  /* --- Tokyo Night / Deep Tech Overhaul --- */
 
-  /* 1. Header with Copper Gradient */
+  /* 1. Header with Tokyo Gradient */
   .display-title {
     font-size: 3rem;
     font-weight: 900;
-    background: linear-gradient(to right, #f59e0b, #fb7185); /* Amber to Rose Copper */
+    background: linear-gradient(to right, #7dcfff, #bb9af7); /* Sky Blue to Lavender */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.2rem;
@@ -102,7 +102,7 @@ order: 1
   }
 
   .hero-subtitle {
-    color: #f59e0b; /* Primary Copper Amber */
+    color: #bb9af7; /* Soft Lavender */
     font-family: 'Courier New', monospace;
     font-weight: bold;
     text-transform: uppercase;
@@ -110,17 +110,17 @@ order: 1
     margin-bottom: 20px;
   }
 
-  /* 2. Glassmorphism Mission Box - Warm Tint */
+  /* 2. Glassmorphism Mission Box - Storm Tint */
   blockquote {
-    border-left: 5px solid #f59e0b !important;
-    background: rgba(245, 158, 11, 0.05) !important;
+    border-left: 5px solid #bb9af7 !important;
+    background: rgba(187, 154, 247, 0.05) !important;
     border-radius: 12px !important;
     padding: 25px !important;
-    color: #e2e8f0 !important;
-    box-shadow: inset 0 0 20px rgba(245, 158, 11, 0.03);
+    color: #a9b1d6 !important; /* Tokyo Night Text Color */
+    box-shadow: inset 0 0 20px rgba(187, 154, 247, 0.03);
   }
 
-  /* 3. Skill Tiles with Copper Borders */
+  /* 3. Skill Tiles with Storm Borders */
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -129,37 +129,37 @@ order: 1
   }
 
   .skill-item {
-    background: #0f1115 !important; /* Charcoal Black */
-    border: 1px solid #1e293b !important;
+    background: #1a1b26 !important; /* Tokyo Night Background */
+    border: 1px solid #24283b !important;
     padding: 20px;
     border-radius: 16px;
     text-align: center;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
-  /* Individual Hover Glows - Warm Palette */
-  .python:hover { border-color: #3776ab !important; box-shadow: 0 0 20px rgba(55, 118, 171, 0.2); }
-  .csharp:hover { border-color: #fb7185 !important; box-shadow: 0 0 20px rgba(251, 113, 133, 0.2); }
-  .sql:hover { border-color: #f59e0b !important; box-shadow: 0 0 20px rgba(245, 158, 11, 0.2); }
-  .web:hover { border-color: #f43f5e !important; box-shadow: 0 0 20px rgba(244, 63, 94, 0.2); }
+  /* Hover Glows - Tokyo Palette */
+  .python:hover { border-color: #3d59a1 !important; box-shadow: 0 0 20px rgba(61, 89, 161, 0.3); }
+  .csharp:hover { border-color: #bb9af7 !important; box-shadow: 0 0 20px rgba(187, 154, 247, 0.3); }
+  .sql:hover { border-color: #7dcfff !important; box-shadow: 0 0 20px rgba(125, 207, 255, 0.3); }
+  .web:hover { border-color: #f7768e !important; box-shadow: 0 0 20px rgba(247, 118, 142, 0.3); }
 
   .skill-item i {
     font-size: 2rem;
     margin-bottom: 15px;
     display: block;
-    color: #f59e0b; /* Icons now Copper */
+    color: #7dcfff; /* Icons Sky Blue */
   }
   
-  .skill-item span { color: #f8fafc; font-weight: bold; display: block; }
-  .skill-item small { color: #64748b; font-size: 0.8rem; }
+  .skill-item span { color: #c0caf5; font-weight: bold; display: block; }
+  .skill-item small { color: #565f89; font-size: 0.8rem; }
 
-  /* --- FIXED TIMELINE ALIGNMENT - Copper Edition --- */
+  /* --- FIXED TIMELINE ALIGNMENT - Tokyo Edition --- */
   .timeline {
     position: relative;
     max-width: 100%;
     margin: 40px 0;
     padding-left: 30px;
-    border-left: 2px solid #1e293b; 
+    border-left: 2px solid #24283b; 
   }
 
   .timeline-item {
@@ -167,24 +167,24 @@ order: 1
     margin-bottom: 30px;
   }
 
-  /* The Glowing Dots - Warm Amber */
+  /* The Glowing Dots - Tokyo Cyan */
   .timeline-dot {
     position: absolute;
     left: -38px; 
     top: 20px;
     width: 14px;
     height: 14px;
-    background: #f59e0b;
+    background: #7dcfff;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(245, 158, 11, 0.8);
+    box-shadow: 0 0 10px rgba(125, 207, 255, 0.8);
     z-index: 10;
-    border: 2px solid #0f1115;
+    border: 2px solid #1a1b26;
   }
 
   /* The Content Boxes */
   .timeline-content {
-    background: rgba(30, 41, 59, 0.3) !important;
-    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    background: rgba(26, 27, 38, 0.6) !important;
+    border: 1px solid rgba(125, 207, 255, 0.1) !important;
     padding: 20px;
     border-radius: 16px;
     margin-left: 10px;
@@ -192,25 +192,25 @@ order: 1
   }
 
   .timeline-content:hover {
-    background: rgba(245, 158, 11, 0.03) !important;
-    border-color: #f59e0b !important;
+    background: rgba(125, 207, 255, 0.03) !important;
+    border-color: #7dcfff !important;
     transform: translateX(8px);
   }
 
-  /* --- "PRESENT" HIGHLIGHT - Rose Copper --- */
+  /* --- "PRESENT" HIGHLIGHT - Lavender --- */
   .timeline-item:nth-last-child(-n+2) .timeline-dot {
-    background: #fb7185 !important; /* Rose Copper for active */
-    box-shadow: 0 0 15px rgba(251, 113, 133, 0.6);
+    background: #bb9af7 !important; /* Lavender for active */
+    box-shadow: 0 0 15px rgba(187, 154, 247, 0.6);
   }
 
   .timeline-item:nth-last-child(-n+2) .timeline-content {
-    border-left: 3px solid #fb7185 !important;
+    border-left: 3px solid #bb9af7 !important;
   }
 
-  .milestone-title { color: #f1f5f9 !important; font-size: 1.2rem !important; font-weight: 700; }
+  .milestone-title { color: #c0caf5 !important; font-size: 1.2rem !important; font-weight: 700; }
   
   .milestone-date {
-    color: #f59e0b !important;
+    color: #7dcfff !important;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.85rem;
     font-weight: bold;
@@ -219,8 +219,8 @@ order: 1
   }
 
   .timeline-item:nth-last-child(-n+2) .milestone-date {
-    color: #fb7185 !important;
+    color: #bb9af7 !important;
   }
 
-  .timeline-content p { color: #94a3b8 !important; line-height: 1.6; margin: 0; }
+  .timeline-content p { color: #9aa5ce !important; line-height: 1.6; margin: 0; }
 </style>
