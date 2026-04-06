@@ -7,7 +7,7 @@ order: 1
 
 <div class="about-hero">
   <h1 class="display-title">👋 Hi, I'm Sohaib Maan</h1>
-  <p class="hero-subtitle">Machine Learning Enthusiast & Full-Stack Developer</p>
+  <p class="hero-subtitle">Machine Learning Enthusiast</p>
   <blockquote>
     "Dedicated to turning raw data into intelligent insights and building predictive models for real-world impact."
   </blockquote>
@@ -25,9 +25,6 @@ order: 1
 I am currently a student at **UET Faisalabad**, bridging the gap between complex algorithms and user-friendly applications.
 
 ---
-
-### 2. The Styling
-Paste this at the **very bottom** of your `about.md` file. It uses the "Slate & Cyan" theme to match your new contact form.
 
 ```html
 
