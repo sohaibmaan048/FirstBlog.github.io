@@ -24,6 +24,39 @@ order: 1
 ## 🎓 Education & Journey
 I am currently a student at **UET Faisalabad**, bridging the gap between complex algorithms and user-friendly applications.
 
+
+
+
+## 🚀 The Journey So Far
+
+<div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h3 class="milestone-title">UET Faisalabad 🎓</h3>
+      <p class="milestone-date">2022 - Present</p>
+      <p>Currently pursuing my degree, focusing on the intersection of Software Engineering and Data Science. Maintaining a strong foundation in core algorithms.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h3 class="milestone-title">Machine Learning Deep Dive 🤖</h3>
+      <p class="milestone-date">2023 - 2024</p>
+      <p>Shifted focus toward <strong>Predictive Modeling</strong>. Mastered Scikit-Learn and Pandas to clean raw data and turn it into actionable insights.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h3 class="milestone-title">Full-Stack Integration 🌐</h3>
+      <p class="milestone-date">Present</p>
+      <p>Bridging the gap by integrating ML models into functional web and desktop environments using <strong>.NET and C#</strong>.</p>
+    </div>
+  </div>
+</div>
 ---
 
 
@@ -106,4 +139,70 @@ I am currently a student at **UET Faisalabad**, bridging the gap between complex
     transform: scale(1.2) rotate(5deg);
     transition: 0.3s;
   }
+
+
+
+  /* --- Timeline Styling --- */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 40px 0;
+  padding-left: 30px;
+  border-left: 2px solid #1e293b; /* The vertical line */
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* The Glowing Dots */
+.timeline-dot {
+  position: absolute;
+  left: -37px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: #22d3ee;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #22d3ee, 0 0 20px rgba(34, 211, 238, 0.4);
+}
+
+/* The Content Boxes */
+.timeline-content {
+  background: rgba(30, 41, 59, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  padding: 20px;
+  border-radius: 16px;
+  transition: 0.3s ease;
+}
+
+.timeline-content:hover {
+  background: rgba(34, 211, 238, 0.05) !important;
+  border-color: #22d3ee !important;
+  transform: translateX(10px);
+}
+
+.milestone-title {
+  color: #f1f5f9 !important;
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 5px !important;
+}
+
+.milestone-date {
+  color: #22d3ee !important;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: #94a3b8 !important;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
 </style>
