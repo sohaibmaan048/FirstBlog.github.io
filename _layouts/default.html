@@ -1,0 +1,58 @@
+{% if page.url contains '/posts/' %}
+<style>
+  /* --- The "Post-Only" Force Style --- */
+  
+  /* 1. Target the Article Body specifically */
+  .post-content h2 {
+    color: #4f46e5 !important;
+    border-bottom: 2px solid rgba(79, 70, 229, 0.1) !important;
+    padding-bottom: 10px !important;
+    font-weight: 800 !important;
+  }
+
+  .post-content h3 {
+    color: #06b6d4 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+  }
+
+  /* 2. Interactive Lists for DBMS/OOP */
+  .post-content ul li {
+    list-style: none !important;
+    padding-left: 5px !important;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  }
+
+  .post-content ul li::before {
+    content: "〉" !important;
+    color: #4f46e5 !important;
+    font-weight: bold !important;
+    margin-right: 10px !important;
+  }
+
+  .post-content ul li:hover {
+    transform: translateX(12px) !important;
+    color: #4f46e5 !important;
+  }
+
+  /* 3. Image Effects */
+  .post-content img {
+    border-radius: 16px !important;
+    transition: all 0.4s ease !important;
+    border: 1px solid rgba(79, 70, 229, 0.1) !important;
+  }
+
+  .post-content img:hover {
+    transform: scale(1.02) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2) !important;
+    border-color: #4f46e5 !important;
+  }
+
+  /* 4. Bold Highlights */
+  .post-content strong {
+    color: #4f46e5 !important;
+    background: rgba(79, 70, 229, 0.05) !important;
+    padding: 2px 5px !important;
+    border-radius: 4px !important;
+  }
+</style>
+{% endif %}
