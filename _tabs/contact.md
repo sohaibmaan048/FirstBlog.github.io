@@ -64,3 +64,74 @@ I’m always happy to connect! Feel free to reach out through any of the platfor
     Send Message <i class="fas fa-paper-plane ms-2"></i>
   </button>
 </form>
+
+
+
+<style>
+  /* Remove default link styling from cards */
+  .contact-card {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: block;
+  }
+
+  /* The Tiles/Cards */
+  .contact-card .card {
+    background: #1e293b !important;
+    border: 1px solid rgba(110, 142, 251, 0.2) !important;
+    border-radius: 12px !important;
+    transition: all 0.3s ease-in-out !important;
+  }
+
+  .contact-card:hover .card {
+    transform: translateY(-5px);
+    border-color: #6e8efb !important;
+    background: #26334d !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  }
+
+  .contact-card i {
+    color: #6e8efb;
+  }
+
+  .contact-card span {
+    font-weight: bold;
+    display: block;
+    font-size: 1.1rem;
+  }
+
+  .contact-card small {
+    color: #94a3b8;
+  }
+
+  /* Form Styling */
+  .modern-form .form-control {
+    background: #0f172a !important;
+    border: 1px solid #334155 !important;
+    color: white !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+  }
+
+  .modern-form .form-control:focus {
+    border-color: #6e8efb !important;
+    box-shadow: 0 0 8px rgba(110, 142, 251, 0.3) !important;
+  }
+
+  .btn-submit {
+    background: linear-gradient(135deg, #6e8efb 0%, #a777e3 100%) !important;
+    color: white !important;
+    border: none !important;
+    padding: 14px 28px !important;
+    border-radius: 8px !important;
+    font-weight: bold !important;
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .btn-submit:hover {
+    filter: brightness(1.1);
+    transform: scale(1.01);
+  }
+</style>
