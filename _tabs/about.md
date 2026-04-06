@@ -26,8 +26,6 @@ I am currently a student at **UET Faisalabad**, bridging the gap between complex
 
 ---
 
-```html
-
 
 
 <style>
