@@ -79,6 +79,18 @@ order: 1
 </div>
 
 <style>
+/* Removes the empty space where the title used to sit */
+header.d-flex.justify-content-between, 
+#post-wrapper > header {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.about-header {
+  margin-top: -40px !important; /* Pulls your 'Hi, I'm Sohaib' to the very top */
+}
+  
   /* --- Universal Indigo Theme (Light/Dark Compatible) --- */
   
   .display-title {
@@ -210,14 +222,6 @@ order: 1
   
   .timeline-content p { color: inherit; opacity: 0.8; font-size: 0.95rem; line-height: 1.6; margin: 0; }
 
-  /* Hide the default Chirpy page title to remove redundancy */
-.post-content > h1:first-of-type, 
-header .post-title {
-  display: none !important;
-}
 
-/* Optional: Adjust spacing at the very top now that the title is gone */
-.about-header {
-  margin-top: -20px;
 }
 </style>
