@@ -12,17 +12,21 @@ Returning to university after the Eid break meant switching gears from a relaxed
 
 ## The Table Structure: 10 Key Features 📝
 
-The table included the following attributes (columns):
-* **gadget_id INT** – the unique identifier for each gadget 🆔
-* **gadget_name VARCHAR(50)** – the name of the device 🏷️
-* **brand VARCHAR(50)** – manufacturer or company 🏢
-* **category VARCHAR(50)** – type of gadget, like smartphone or laptop 💻📱
-* **purchase_year INT** – the year the gadget was bought 📅
-* **price_usd DECIMAL(10,2)** – cost in USD 💰
-* **battery_life_hours INT** – estimated battery life in hours 🔋
-* **connectivity VARCHAR(50)** – options like Wi-Fi, Bluetooth, or 5G 🌐
-* **operating_system VARCHAR(50)** – software running the device ⚙️
-* **rating DECIMAL(2,1)** – user rating out of 5 🌟
+```sql
+-- Creating the Tech Gadgets table with professional data types
+CREATE TABLE TechGadgets (
+    gadget_id INT PRIMARY KEY,           -- Unique identifier
+    gadget_name VARCHAR(50) NOT NULL,    -- Name of device
+    brand VARCHAR(50),                   -- Manufacturer
+    category VARCHAR(50),                -- Type of gadget
+    purchase_year INT,                   -- Year bought
+    price_usd DECIMAL(10, 2),            -- Cost in USD
+    battery_life_hours INT,              -- Battery life
+    connectivity VARCHAR(50),            -- Wi-Fi/5G/Bluetooth
+    operating_system VARCHAR(50),        -- Software
+    rating DECIMAL(2, 1)                 -- User rating out of 5
+);
+```
 ![The Structure of the Table](/assets/in_post/pic1.jpg)
 
 Choosing data types for each attribute was an important step. For example, the price needed a decimal type to allow accurate calculations, while battery life required integers for easy comparisons. Using `gadget_id` as a **Primary Key** ensured each record was unique and easy to reference.
