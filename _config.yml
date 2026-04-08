@@ -16,7 +16,7 @@ timezone:
 
 title: Sohaib's Blog
 
-tagline: UET Faisalabad Student | Learner # it will display as the subtitle
+tagline: Building Digital Experiences with Precision and Code # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A responsive Jekyll portfolio website presenting my projects, programming work, and progress in computer engineering and machine learning.
