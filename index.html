@@ -3,39 +3,71 @@ layout: home
 # Index page
 ---
 
-<button id="theme-toggle" class="theme-btn">
+<button id="theme-toggle" class="theme-btn" title="Toggle Dark/Light Mode">
   <i id="theme-icon" class="fas fa-moon"></i>
 </button>
 
 <style>
   .theme-btn {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 50px;
-    height: 50px;
+    bottom: 30px;
+    right: 30px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
-    background: #333;
-    color: #fff;
+    background: #007bff; /* Professional blue */
+    color: white;
     border: none;
     cursor: pointer;
     z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+
+  .theme-btn:hover {
+    transform: scale(1.1);
+    background: #0056b3;
+  }
+
+  /* Ensure the icon changes color if needed */
+  [data-mode='dark'] .theme-btn {
+    background: #f8f9fa;
+    color: #1a1a1a;
   }
 </style>
 
 <script>
-  const btn = document.getElementById('theme-toggle');
-  btn.addEventListener('click', () => {
-    // This theme usually toggles a class on the HTML or Body tag
-    const mode = document.documentElement.getAttribute('data-mode');
-    if (mode === 'dark') {
-      document.documentElement.setAttribute('data-mode', 'light');
+  const themeBtn = document.getElementById('theme-toggle');
+  const icon = document.getElementById('theme-icon');
+
+  themeBtn.addEventListener('click', () => {
+    // 1. Trigger the theme's built-in mode change
+    const html = document.documentElement;
+    const currentMode = html.getAttribute('data-mode');
+    const newMode = currentMode === 'dark' ? 'light' : 'dark';
+    
+    // 2. Apply the mode to the HTML tag
+    html.setAttribute('data-mode', newMode);
+    
+    // 3. Save it so it persists on refresh
+    localStorage.setItem('mode', newMode);
+
+    // 4. Swap the icon
+    if (newMode === 'dark') {
+      icon.classList.replace('fa-moon', 'fa-sun');
     } else {
-      document.documentElement.setAttribute('data-mode', 'dark');
+      icon.classList.replace('fa-sun', 'fa-moon');
+    }
+  });
+
+  // Keep icon in sync on page load
+  window.addEventListener('DOMContentLoaded', () => {
+    if (document.documentElement.getAttribute('data-mode') === 'dark') {
+      icon.classList.replace('fa-moon', 'fa-sun');
     }
   });
 </script>
