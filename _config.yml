@@ -34,14 +34,12 @@ twitter:
   username: twitter_username # change to your Twitter username
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Sohaib_Mehmood
-  email: sohaibmaan048@gmail.com # change to your email address
-  fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
+  name: "Sohaib Mehmood"
+  email: "sohaibmaan048@gmail.com"
   links:
-    - type: github
-      url: https://github.com/sohaibmaan048 # change to your GitHub homepage
+    - https://github.com/sohaibmaan048
+    # If you want to add more later, just add a dash and the URL like this:
+    # - https://www.linkedin.com/in/your-profile # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
