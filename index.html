@@ -3,89 +3,39 @@ layout: home
 # Index page
 ---
 
+<button id="theme-toggle" class="theme-btn">
+  <i id="theme-icon" class="fas fa-moon"></i>
+</button>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+  .theme-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+</style>
 
-    <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #1a1a1a;
-            --toggle-bg: #eeeeee;
-        }
-
-        [data-theme='dark'] {
-            --bg-color: #0f172a; 
-            --text-color: #f1f5f9;
-            --toggle-bg: #334155;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            transition: background-color 0.4s ease, color 0.4s ease;
-            margin: 0;
-            font-family: sans-serif;
-        }
-
-        /* The Toggle Button Style */
-        .theme-btn {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: var(--toggle-bg);
-            border: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            color: var(--text-color);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            z-index: 1000;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Welcome to My Portfolio</h1>
-
-    <button id="theme-toggle" class="theme-btn">
-        <i id="theme-icon" class="fas fa-moon"></i>
-    </button>
-
-    <script>
-        const toggleBtn = document.getElementById('theme-toggle');
-        const themeIcon = document.getElementById('theme-icon');
-        
-        // Load saved theme
-        if (localStorage.getItem('theme') === 'dark') {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            themeIcon.classList.replace('fa-moon', 'fa-sun');
-        }
-
-        toggleBtn.addEventListener('click', () => {
-            let theme = document.documentElement.getAttribute('data-theme');
-            
-            if (theme === 'dark') {
-                document.documentElement.setAttribute('data-theme', 'light');
-                themeIcon.classList.replace('fa-sun', 'fa-moon');
-                localStorage.setItem('theme', 'light');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                themeIcon.classList.replace('fa-moon', 'fa-sun');
-                localStorage.setItem('theme', 'dark');
-            }
-        });
-    </script>
-</body>
-</html>
+<script>
+  const btn = document.getElementById('theme-toggle');
+  btn.addEventListener('click', () => {
+    // This theme usually toggles a class on the HTML or Body tag
+    const mode = document.documentElement.getAttribute('data-mode');
+    if (mode === 'dark') {
+      document.documentElement.setAttribute('data-mode', 'light');
+    } else {
+      document.documentElement.setAttribute('data-mode', 'dark');
+    }
+  });
+</script>
