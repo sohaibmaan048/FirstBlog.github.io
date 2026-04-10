@@ -3,7 +3,6 @@ layout: page
 title: ""
 icon: fas fa-info-circle
 order: 1
-permalink: /
 ---
 
 <div class="about-header">
@@ -79,12 +78,8 @@ permalink: /
   </div>
 </div>
 
-<button id="theme-toggle" class="theme-btn" title="Toggle Dark/Light Mode">
-  <i id="theme-icon" class="fas fa-moon"></i>
-</button>
-
 <style>
-/* --- Layout Fixes --- */
+/* --- Theme Overrides --- */
 header.d-flex.justify-content-between, 
 #post-wrapper > header {
   display: none !important;
@@ -94,7 +89,6 @@ header.d-flex.justify-content-between,
   margin-top: -20px !important;
 }
 
-/* --- Typography & Colors --- */
 .display-title {
   font-size: 3rem;
   font-weight: 900;
@@ -118,7 +112,6 @@ header.d-flex.justify-content-between,
   background: rgba(79, 70, 229, 0.05) !important;
   border-radius: 8px !important;
   padding: 20px !important;
-  font-style: italic;
 }
 
 /* --- Skills Grid --- */
@@ -173,7 +166,7 @@ header.d-flex.justify-content-between,
   background: #4f46e5;
   border-radius: 50%;
   z-index: 10;
-  border: 2px solid var(--main-bg);
+  border: 2px solid #fff;
 }
 
 .timeline-content {
@@ -191,44 +184,11 @@ header.d-flex.justify-content-between,
   transform: translateX(15px);
 }
 
+.timeline-item:hover .timeline-dot {
+  transform: scale(1.5);
+  background: #06b6d4;
+}
+
 .milestone-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 5px; }
 .milestone-date { color: #4f46e5; font-weight: bold; font-size: 0.8rem; margin-bottom: 10px; display: inline-block; }
-
-/* --- Theme Button --- */
-.theme-btn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  background: #4f46e5;
-  color: white;
-  border: none;
-  cursor: pointer;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
 </style>
-
-<script>
-  const themeBtn = document.getElementById('theme-toggle');
-  const icon = document.getElementById('theme-icon');
-
-  themeBtn?.addEventListener('click', () => {
-    const html = document.documentElement;
-    const currentMode = html.getAttribute('data-mode');
-    const newMode = currentMode === 'dark' ? 'light' : 'dark';
-    html.setAttribute('data-mode', newMode);
-    localStorage.setItem('mode', newMode);
-    
-    if (newMode === 'dark') {
-      icon.classList.replace('fa-moon', 'fa-sun');
-    } else {
-      icon.classList.replace('fa-sun', 'fa-moon');
-    }
-  });
-</script>
