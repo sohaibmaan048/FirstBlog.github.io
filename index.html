@@ -3,6 +3,7 @@ layout: page
 title: ""
 icon: fas fa-info-circle
 order: 1
+permalink: /
 ---
 
 <div class="about-header">
@@ -44,6 +45,15 @@ order: 1
   <div class="timeline-item">
     <div class="timeline-dot"></div>
     <div class="timeline-content">
+      <h3 class="milestone-title">AI/ML Intern | Developer Hub 🚀</h3>
+      <p class="milestone-date">APRIL 2026 - PRESENT (Remote)</p>
+      <p>Gaining <strong>industry-level experience</strong> focused on developing intelligent models and integrating <strong>Machine Learning</strong> pipelines into production-ready applications. Collaborating with senior engineers to optimize algorithmic performance.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
       <h3 class="milestone-title">UET Faisalabad 🎓</h3>
       <p class="milestone-date">2025 - PRESENT</p>
       <p>Advancing my engineering degree with a focus on high-performance computing and algorithmic efficiency at <strong>UET</strong>.</p>
@@ -67,171 +77,158 @@ order: 1
       <p>Integrating ML models into functional web and desktop environments using <strong>.NET and C#</strong>.</p>
     </div>
   </div>
-
-  <div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-      <h3 class="milestone-title">MySQL & Data Engineering 🗄️</h3>
-      <p class="milestone-date">FEB 2026 - PRESENT</p>
-      <p>Managing relational data structures to ensure seamless data flow for production-grade <strong>ML pipelines</strong>.</p>
-    </div>
-  </div>
 </div>
 
-<div class="timeline">
-  <div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-     <h3 class="milestone-title">AI/ML Intern | Developer Hub 🚀</h3>
-      <p class="milestone-date">April 2026 - PRESENT (</p>
-      <p>Gaining <strong>industry-level experience</strong> as an ML/AI Intern, focused on developing intelligent models and integrating <strong>Machine Learning</strong> pipelines into production-ready applications. Working closely with senior engineers to implement data-driven solutions and optimize algorithmic performance.</p>
-    </div>
-  </div>
+<button id="theme-toggle" class="theme-btn" title="Toggle Dark/Light Mode">
+  <i id="theme-icon" class="fas fa-moon"></i>
+</button>
 
 <style>
-/* Removes the empty space where the title used to sit */
+/* --- Layout Fixes --- */
 header.d-flex.justify-content-between, 
 #post-wrapper > header {
   display: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 .about-header {
-  margin-top: -40px !important; /* Pulls your 'Hi, I'm Sohaib' to the very top */
+  margin-top: -20px !important;
 }
-  
-  /* --- Universal Indigo Theme (Light/Dark Compatible) --- */
-  
-  .display-title {
-    font-size: 3rem;
-    font-weight: 900;
-    background: linear-gradient(to right, #4f46e5, #06b6d4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 0.2rem;
-  }
 
-  .hero-subtitle {
-    color: #4f46e5;
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 20px;
-  }
+/* --- Typography & Colors --- */
+.display-title {
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(to right, #4f46e5, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.2rem;
+}
 
-  .mission-statement {
-    border-left: 5px solid #4f46e5 !important;
-    background: rgba(79, 70, 229, 0.05) !important;
-    border-radius: 8px !important;
-    padding: 20px !important;
-    color: inherit !important;
-  }
+.hero-subtitle {
+  color: #4f46e5;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
 
-  /* --- Skills Grid --- */
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 15px;
-    margin-top: 25px;
-  }
+.mission-statement {
+  border-left: 5px solid #4f46e5 !important;
+  background: rgba(79, 70, 229, 0.05) !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+  font-style: italic;
+}
 
-  .skill-item {
-    background: rgba(120, 120, 120, 0.05) !important;
-    border: 1px solid rgba(79, 70, 229, 0.2) !important;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    transition: all 0.3s ease-in-out !important;
-  }
+/* --- Skills Grid --- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin-top: 25px;
+}
 
-  .skill-item:hover {
-    border-color: #4f46e5 !important;
-    transform: translateY(-8px) !important;
-    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.15);
-  }
+.skill-item {
+  background: rgba(120, 120, 120, 0.05);
+  border: 1px solid rgba(79, 70, 229, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
 
-  .skill-item i {
-    font-size: 2rem;
-    margin-bottom: 12px;
-    display: block;
-    color: #4f46e5;
-  }
+.skill-item:hover {
+  border-color: #4f46e5;
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.15);
+}
 
-  /* --- Perfectly Aligned & Moving Timeline --- */
-  .timeline {
-    position: relative;
-    padding-left: 35px;
-    border-left: 2px solid rgba(79, 70, 229, 0.2);
-    margin: 40px 0;
-    list-style: none;
-  }
+.skill-item i {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  display: block;
+  color: #4f46e5;
+}
 
-  .timeline-item {
-    position: relative;
-    margin-bottom: 35px;
-    /* This allows children to move relative to this container */
-    display: block; 
-  }
+/* --- Timeline Styling --- */
+.timeline {
+  position: relative;
+  padding-left: 35px;
+  border-left: 2px solid rgba(79, 70, 229, 0.2);
+  margin: 40px 0;
+}
 
-  .timeline-dot {
-    position: absolute;
-    left: -42px; /* Adjusted to center exactly on the 2px line */
-    top: 22px;
-    width: 12px;
-    height: 12px;
-    background: #4f46e5;
-    border-radius: 50%;
-    z-index: 10;
-    border: 2px solid var(--main-bg, #fff);
-    transition: all 0.3s ease;
-  }
+.timeline-item {
+  position: relative;
+  margin-bottom: 35px;
+}
 
-  .timeline-content {
-    background: rgba(120, 120, 120, 0.03) !important;
-    border: 1px solid rgba(79, 70, 229, 0.1) !important;
-    padding: 20px;
-    border-radius: 14px;
-    margin-left: 10px;
-    /* The core movement logic */
-    display: block;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
-                background 0.3s ease, 
-                border-color 0.3s ease !important;
-    cursor: pointer;
-  }
+.timeline-dot {
+  position: absolute;
+  left: -42px;
+  top: 22px;
+  width: 12px;
+  height: 12px;
+  background: #4f46e5;
+  border-radius: 50%;
+  z-index: 10;
+  border: 2px solid var(--main-bg);
+}
 
-  /* Hover Action: Shift Card and Scale Dot */
-  .timeline-item:hover .timeline-content {
-    background: rgba(79, 70, 229, 0.07) !important;
-    border-color: #4f46e5 !important;
-    transform: translateX(15px) !important; /* Forces the slide effect */
-    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.05);
-  }
+.timeline-content {
+  background: rgba(120, 120, 120, 0.03);
+  border: 1px solid rgba(79, 70, 229, 0.1);
+  padding: 20px;
+  border-radius: 14px;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), background 0.3s ease;
+  cursor: pointer;
+}
 
-  .timeline-item:hover .timeline-dot {
-    transform: scale(1.5);
-    background: #06b6d4 !important;
-    box-shadow: 0 0 10px #06b6d4;
-  }
+.timeline-item:hover .timeline-content {
+  background: rgba(79, 70, 229, 0.07);
+  border-color: #4f46e5;
+  transform: translateX(15px);
+}
 
-  /* --- Active State (Amber/Cyan Focus) --- */
-  .timeline-item:nth-last-child(-n+2) .timeline-dot {
-    background: #06b6d4 !important;
-    box-shadow: 0 0 10px rgba(6, 182, 212, 0.4);
-  }
+.milestone-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 5px; }
+.milestone-date { color: #4f46e5; font-weight: bold; font-size: 0.8rem; margin-bottom: 10px; display: inline-block; }
 
-  .timeline-item:nth-last-child(-n+2) .timeline-content {
-    border-left: 4px solid #06b6d4 !important;
-  }
-
-  .milestone-title { color: inherit; font-size: 1.2rem !important; font-weight: 700; margin-bottom: 5px !important; }
-  .milestone-date { color: #4f46e5 !important; font-weight: bold; font-size: 0.8rem; margin-bottom: 10px; display: inline-block; }
-  .timeline-item:nth-last-child(-n+2) .milestone-date { color: #0891b2 !important; }
-  
-  .timeline-content p { color: inherit; opacity: 0.8; font-size: 0.95rem; line-height: 1.6; margin: 0; }
-
-
+/* --- Theme Button --- */
+.theme-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 </style>
+
+<script>
+  const themeBtn = document.getElementById('theme-toggle');
+  const icon = document.getElementById('theme-icon');
+
+  themeBtn?.addEventListener('click', () => {
+    const html = document.documentElement;
+    const currentMode = html.getAttribute('data-mode');
+    const newMode = currentMode === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-mode', newMode);
+    localStorage.setItem('mode', newMode);
+    
+    if (newMode === 'dark') {
+      icon.classList.replace('fa-moon', 'fa-sun');
+    } else {
+      icon.classList.replace('fa-sun', 'fa-moon');
+    }
+  });
+</script>
