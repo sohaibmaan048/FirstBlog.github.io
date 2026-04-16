@@ -1,11 +1,11 @@
 ---
-title: "Midterms, Stress, and an Unexpected Internship Journey 🎓💻"
-date: 2026-04-17
+title: "Midterms Stress and Internship Journey"
+date: 2026-04-17 
 categories: [Education, Career]
-tags: [Midterms, Internship, Remote Work, Student Life, OOP]
+tags: [Midterms, Internship]
 image:
   path: /assets/posts/thumbnail-3.png
-description: "A real experience of online classes, exam pressure, and starting a remote internship during the chaos of midterm week."
+description: "A real experience of online classes and starting a remote internship."
 ---
 
 Midterm week started just after one week of classes ended. I was already feeling stressed because online classes had not given me a clear understanding of many concepts. Most of the time, it felt like things were rushed, and I could not fully understand the ideas being taught.
