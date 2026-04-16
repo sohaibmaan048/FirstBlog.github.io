@@ -44,7 +44,7 @@ I performed better in DBMS than in both DLD and OOP because the concepts were cl
 
 During my exam period, I also received an opportunity to join an internship at **DevelopersHub Corporation** as a remote intern.
 
-![Remote Internship Journey](/assets/in_post/internship_start.jpg)
+![Remote Internship Journey](/assets/in_post/inside.png)
 
 This made things more challenging because I had to balance exams and internship communication at the same time. I requested my internship instructor to extend my task submission deadline due to midterm pressure, and they agreed.
 
