@@ -1,6 +1,6 @@
 ---
 title: "Midterms, Stress, and an Unexpected Internship Journey 🎓💻"
-date: 2026-04-17 10:00:00 +0500
+date: 2026-04-17
 categories: [Education, Career]
 tags: [Midterms, Internship, Remote Work, Student Life, OOP]
 image:
