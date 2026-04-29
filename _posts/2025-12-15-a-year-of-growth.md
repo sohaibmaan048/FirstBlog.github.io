@@ -1,9 +1,11 @@
 ---
-title: "1. A Year of Challenges and Growth"
-date: 2024-01-01 09:00:00 +0500
+title: " A Year of Challenges and Growth"
+date: 2025-12-15 09:00:00 +0500
 categories: [Personal, Reflection]
-tags: [Growth, ECAT, Hostel Life]
-pin: false
+tags: [Growth, ECAT, Hostel Life, Resilience]
+image:
+  path: /assets/posts/thumbnail-01.png
+  alt: A person climbing a mountain toward success, symbolizing growth and academic journey.
 ---
 
 The past year was a transformative journey, marked by intense academic pressure, personal transitions, and the steep learning curves that come with stepping out of one's comfort zone. Looking back, the experiences that felt the most overwhelming at the time were the ones that ultimately contributed most to my growth.
