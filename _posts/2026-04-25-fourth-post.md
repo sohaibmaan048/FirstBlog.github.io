@@ -1,7 +1,7 @@
 ---
 title: Learning Databases, OOP Concepts, and Internship Progress
-date: 2026-05-04 19:00:00 +0500
-categories: [Learning, Tech]
+date: 2026-04-25 19:00:00 +0500
+categories: [Education, University Life]
 tags: [databases, oop, internship, software-engineering]
 image:
   path: /assets/posts/p3.png 
